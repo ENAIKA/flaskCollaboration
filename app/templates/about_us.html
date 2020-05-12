@@ -1,0 +1,28 @@
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4 text-center">About Us</h1>
+    <hr class="my-4 bg-warning">
+    <p class="lead text-center"> Learn more and Pass highly  </p>
+    <hr class="my-4 bg-warning">
+    <div class="row contact_us text-center">
+        <div class="col-md-12">
+          <h3 id="m2">CONTACT US.</h3>
+        </div>
+        <div class="col-md-12">
+            <a href="https://web.facebook.com/" class="btn" target="blank">
+                <img src="{{ url_for('static', filename='facebookicon.png') }}">
+            </a>
+            <a href="Tel: +256773570180" class="btn">
+                <img src="{{ url_for('static', filename='tellicon.png') }}">
+            </a>
+            <a href="https://wa.me/254713337077" class="btn" target="blank">
+                <img src="{{ url_for('static', filename='whatsappicon.png') }}">
+
+                </a>
+            
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
