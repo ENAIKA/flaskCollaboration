@@ -2,10 +2,10 @@
 Revision papers
 
 ## Author's
-Esther Naika
-Ian Adika
-Hanad Ahmed 
-kaphie
+*Esther Naika
+*Ian Adika
+*Hanad Ahmed 
+*kaphie
 
 ## Project Description
  This is a website where students can access revision papers; to test their mastery of content to help them score high in their KCSE Examination.
@@ -34,3 +34,4 @@ Email: (noreply@github.com)
 ## License
 * This website is licensed under the terms of MIT licensing. Copyright (c) 2020.
 * MT:https://rem.mit-license.org/ 
+ 
