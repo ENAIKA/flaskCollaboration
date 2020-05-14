@@ -33,5 +33,5 @@ Email: (noreply@github.com)
 
 ## License
 * This website is licensed under the terms of MIT licensing. Copyright (c) 2020.
-* MT:https://rem.mit-license.org/ 
+* MIT:https://rem.mit-license.org/ 
  
