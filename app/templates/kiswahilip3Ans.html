@@ -12,7 +12,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ xxx.source.name }}</h5>
             <p class="card-text " style="height: 70px; overflow: hidden; white-space: normal; text-overflow: ellipsis;">{{ xxx.description }}</p>
-            <a href="{{ xxx.url }}" class=" btn btn-outline-primary">Veiw Answer</a>
+            <a href="{{url_for('static',filename='kiswahilip3Ans.pdf')}}" class=" btn btn-outline-primary">Veiw Answer</a>
         </div>
         <div class="card-footer">
             <small class="text-muted">Published at: {{ xxx.publishedAt }}</small>
