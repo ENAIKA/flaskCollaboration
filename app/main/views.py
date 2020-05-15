@@ -22,9 +22,19 @@ def about_us():
     '''
     View root page function that returns the about us page
     '''
-    title = 'Home - Welcome to perfect pitch'
+    title = 'About - Welcome to AceExam'
    
     return render_template('about_us.html', title = title)
+
+@main.route('/contact')
+def contact_us():
+
+    '''
+    View root page function that returns the about us page
+    '''
+    title = 'Contacts - Welcome to AceExam'
+   
+    return render_template('contact.html', title = title)
 
 
 
@@ -71,3 +81,8 @@ def update_pic(uname):
 def chem_two_three_q():
     title='chemistry23 paper 1 challenge'
     return render_template('two_three/chempp1.html',title=title)
+
+@main.route('/kCSE/A23ChemPp1')
+def chem_two_three_a():
+    title='chemistry23 paper 1 answers'
+    return render_template('two_three/achempp1.html',title=title)
