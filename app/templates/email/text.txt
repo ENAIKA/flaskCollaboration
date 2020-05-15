@@ -1,0 +1,5 @@
+Hello {{user.username}}
+Welcome to AceExam
+We have just seen you have signed up for our application and want to welcome you to the family. 
+We are commited to availing reision questions and tests to you at your convinience t help you master the curriculum content and Ace your Exams. 
+Hopefully you find the site resourcefull. 
