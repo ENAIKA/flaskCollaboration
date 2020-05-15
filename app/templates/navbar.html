@@ -1,0 +1,118 @@
+<div style="height:50vh;">
+    <img src="../static/images/write3.jpg" style="width: 100%; height: 80vh;">
+</div>
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid ">
+        <div class="navbar-header">
+            <div class="navbar-header">
+                <img src="../static/images/grad.jpg" alt="logo" width="50px" height="50px">
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"> AceExams </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a name="business" href="/about_us">About Us</a></li>
+                <li><a name="pickUpLines" href="/category/pickUpLines">Contact</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_authenticated %}
+                <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+                <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+                {% else %}
+                <li><a class="btn-lg" href="{{url_for('auth.login')}}">Sign in</a></li>
+                <li><a>|</a></li>
+                <li><a class="btn-lg btn-warning" href="{{url_for('auth.register')}}"><span class="badge">Sign
+                            up</span></a></li>
+
+
+                {%endif%}
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="container" id="categories">
+    <div class="btn-group">
+        <button type="button" style="height: 40px;" class="btn btn-secondary">Languages</button>
+        <button style="background-color: red; height: 40px;" type="button"
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <ul style="list-style: none;">
+                <li><a class="dropdown-item" href='/english'>Eglish </a></li>
+                <li><a class="dropdown-item" href='/kiswahili'>Kiswahili</a></li>
+                <li><a class="dropdown-item" href='/ksl'>Kenya Sign Language</a></li>
+                <li><a class="dropdown-item" href='/german'>German</a></li>
+                <li><a class="dropdown-item" href='/french'>French</a></li>
+                <li><a class="dropdown-item" href='/arabic'>Arabic</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="btn-group">
+        <button type="button" style="height: 40px;" class="btn btn-secondary">Sciences</button>
+        <button style="background-color: red; height: 40px;" type="button"
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <ul style="list-style: none;">
+                <li><a class="dropdown-item" href='/kCSE/Bilogy'>Biology </a></li>
+                <li><a class="dropdown-item" href='/kCSE/Chem23/q'>Chemistry</a></li>
+                <li><a class="dropdown-item" href='/kCSE/Phy'>Physcis</a></li>
+                <li><a class="dropdown-item" href='/kCSE/Bio'>Biology for the Blind</a></li>
+                <li><a class="dropdown-item" href='/kCSE/General'>General Science</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" style="height: 40px;" class="btn btn-secondary">Humanities & Arts</button>
+        <button style="background-color: red; height: 40px;" type="button"
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <ul style="list-style: none;">
+                <li><a class="dropdown-item" href='/history'>history & Government</a></li>
+                <li><a class="dropdown-item" href='/geography'>Geography</a></li>
+                <li><a class="dropdown-item" href='/cre'>CRE</a></li>
+                <li><a class="dropdown-item" href='/ire'>IRE</a></li>
+                <li><a class="dropdown-item" href='/hre'>HRE</a></li>
+                <li><a class="dropdown-item" href='/music'>Music</a></li>
+                <li><a class="dropdown-item" href='/art'>Art & Design</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" style="height: 40px;" class="btn btn-secondary">Technical</button>
+        <button style="background-color: red; height: 40px;" type="button"
+            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <ul style="list-style: none;">
+                <li><a class="dropdown-item" href='metalwork'>Metal Work</a></li>
+                <li><a class="dropdown-item" href='/woodwork'>Wood Work</a></li>
+                <li><a class="dropdown-item" href='/homescience'>Home Science</a></li>
+                <li><a class="dropdown-item" href='/electricity'>Electricity</a></li>
+                <li><a class="dropdown-item" href='/aviatin'>Aviation</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="padding-top: 18vh;">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-family: 'Monoton', cursive;">ACE YOUR EXAMS</h1>
+
+    </div>
+</div>
